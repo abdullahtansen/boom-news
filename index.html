@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boom News</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body onload="allCategory()">
+    <!-- header section start here -->
+    <header class="container">
+      <!-- top header start here -->
+      <nav class="navbar">
+        <div class="container-fluid navBar">
+          <a class="navbar-brand">Boom News</a>
+          <div class="navBar">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+          </div>
+        </div>
+      </nav>
+      <hr />
+      <!-- top header end here here -->
+      <!-- Category Mid Header start here -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navLink g-4 me-auto" id="navSection" role="tablist">
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Category Mid Header end here -->
+    </header>
+    <!-- header section end here -->
+
+    <!-- Main Container Start here -->
+    <main>
+      <!-- Item Founded Size Start here -->
+      <section>
+        <div id="item-count"></div>
+      </section>
+      <!-- Item Founded Size End here -->
+
+      <!--Most View Section Start here -->
+
+      <section class="container py-4">
+        <div class="d-flex justify-content-between">
+          <div class="sort d-flex">
+            <p class="pe-2">Sort By view: </p>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Most Viewed
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" id="most-view" href="#">Most Watched Viewed</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------------
+
+        Most View Section End here 
+                                      
+     ------------------------- -->
+
+      <!-----------------------
+        News Card Container Start here
+      ------------------- -------->
+      <section class="container">
+        <div class="mx-auto mb-4 card" id="news-container">
+
+        </div>
+      </section>
+      <!-- News Card Container End here -->
+
+      <!-- News Details Start here-->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                
+              </h1>
+            </div>
+            <div class="modal-body text-center" id="modalContainer">
+
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- News Details End here-->
+
+      <!-- 
+        Toggle Spinner Start here
+      -->
+      <section class="spinner-section d-none" id="loader">
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        Toggle Spinner End here
+      -->
+
+    </main>
+    <!-- Main Container End here -->
+
+    <!-- Footer Section Start Here -->
+    <footer class="text-center text-success fs-1 mt-3 p-2 fw-semibold">
+      <h4>Copyright 2022 Boom News</h4>
+    </footer>
+    <!-- Footer Section End Here -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

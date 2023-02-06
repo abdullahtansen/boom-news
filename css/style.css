@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+#navSection{
+    padding: 10px;
+}
+.navLi button{
+    background-color: whitesmoke;
+    color: dark;
+    border: none;
+    padding: 20px;
+}
+.navLi button:hover{
+    background-color: aqua;
+}
+.navBar a{
+ text-decoration: none;
+ margin: 10px;
+ font-size: 18px;
+ padding: 5px;
+ font-weight: 700;
+ color: blueviolet;
+}
+.navLink{
+    font-size: 24px;
+    border: none;
+    margin: 2px;
+    gap: 4;
+}
+.item-count{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(253, 8, 8);
+    padding: 15px;
+    background-color: whitesmoke;
+
+}
+
+.navbar-brand span {
+    color: #ffff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.hr {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: -1.5px;
+}
+
+.nav-pills {
+    font-size: 0.8rem;
+
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-body {
+    font-size: 0.8rem;
+}
+
+.card-body .card-text {
+    display: -webkit-box;
+    max-width: 600px;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.row {
+    margin-bottom: 20px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+}
+
+.sort p {
+    font-size: 0.8rem;
+}
+
+#dropdownMenuButton1 {
+    width: 112px;
+    margin-left: 5px;
+}
+
+
+.dropdown .dropdown-toggle {
+    font-size: 0.8rem !important;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+    font-size: 0.8rem !important;
+}
+
+.trendingAndToday p {
+    width: 70px;
+    height: 30px;
+}
+
+.trendingAndToday a {
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.rounded-circle {
+    width: 40px;
+    height: 40px;
+}
+
+.spinner-section {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.detailsBtn {
+    width: 100px;
+    font-size: 0.7rem;
+}
